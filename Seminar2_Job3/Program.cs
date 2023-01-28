@@ -10,11 +10,11 @@ int dayOfWeek = Convert.ToInt32(volue);
 
 if (dayOfWeek >= 1 && dayOfWeek <= 5)
 {
-  System.Console.WriteLine("Ответ: Будний день.");
+  System.Console.WriteLine("Будний день");
 }
 if (dayOfWeek == 6 || dayOfWeek == 7)
 {
-  System.Console.WriteLine("Ответ: Выходной день.");
+  System.Console.WriteLine("Выходной день");
 }
 if (dayOfWeek > 7)
 {
