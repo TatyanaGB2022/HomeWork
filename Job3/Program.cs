@@ -4,13 +4,26 @@
 // -3 -> нет
 // 7 -> нет
 
+// мое решение
+
+// System.Console.WriteLine("Введите число: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+// if (number % 2 == 0)
+// {
+//   System.Console.WriteLine(number + " - Четное число");
+// }
+// else
+// {
+//   System.Console.WriteLine(number + " - Нечетное число");
+// }
+
 System.Console.WriteLine("Введите число: ");
-int number = Convert.ToInt32(Console.ReadLine());
-if (number % 2 == 0)
+string valueString = Console.ReadLine();
+int number = Convert.ToInt32(valueString);
+int remainder = number %2;
+string NumberType = "нечетное";
+if(remainder ==0)
 {
-  System.Console.WriteLine(number + " - Четное число");
+  NumberType = "четное";
 }
-else
-{
-  System.Console.WriteLine(number + " - Нечетное число");
-}
+System.Console.WriteLine($"Число {NumberType}");
