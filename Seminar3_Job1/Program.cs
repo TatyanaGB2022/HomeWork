@@ -5,22 +5,30 @@
 // 12821 -> да
 // 23432 -> да
 
-System.Console.WriteLine("Введите число: ");
-string number = Console.ReadLine();
-int len = number.Length;
+int InputInt(string message)
 
-if (len == 5)
 {
-    if (number[0] == number[4] && number[1] == number[3])
-    {
-        System.Console.WriteLine($"{number} - Является палиндромом");
-    }
-    else
-    {
-        System.Console.Write($"{number} - Не является палиндромом");
-    }
+  System.Console.Write(message);
+  return Convert.ToInt32(Console.ReadLine());
+}
+
+int IsPalindrome(int len)
+{
+  int pal = 0;
+  while (len > 0)
+  {
+    pal = pal * 10 + len % 10;
+    len = len / 10;
+  }
+  return pal;
+}
+int number = InputInt("Введите число: ");
+int palindrom = IsPalindrome(number);
+if (number == palindrom)
+{
+  System.Console.WriteLine("Является палиндромом");
 }
 else
 {
-    System.Console.Write($"{number} - не является пятизначным");
+  System.Console.Write("Не является палиндромом");
 }
