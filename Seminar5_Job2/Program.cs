@@ -15,7 +15,7 @@ int[] GenerateArray(int len)
   Random rnd = new Random();
   for (int i = 0; i < array.Length; i++)
   {
-    array[i] = rnd.Next(1, 100);
+    array[i] = rnd.Next(-100, 100);
   }
   return array;
 }
