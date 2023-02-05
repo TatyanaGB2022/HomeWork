@@ -42,4 +42,4 @@ int EvenNumber(int[] array)
 int len = InputInt("Введите длину массива ");
 int[] array = GenerateArray(len);
 PrintArray(array);
-System.Console.WriteLine($"Количество четных чисел в массиве: {EvenNumber(array)}");
+Console.WriteLine($"Количество четных чисел в массиве: {EvenNumber(array)}");
