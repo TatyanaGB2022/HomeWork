@@ -6,7 +6,7 @@
 // 8 4 2 4
 // Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
 
-int ReadInt(string message)
+int InputInt(string message)
 {
   System.Console.Write(message);
   return Convert.ToInt32(Console.ReadLine());
