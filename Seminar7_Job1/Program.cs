@@ -39,6 +39,5 @@ void PrintArray2D(double[,] array)
     }
     System.Console.WriteLine();
   }
-  System.Console.WriteLine();
 }
 
