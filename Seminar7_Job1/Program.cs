@@ -5,14 +5,14 @@
 // 1 -3,3 8 -9,9
 // 8 7,8 -7,1 9
 
-int ReadInt(string message)
+int InputInt(string message)
 {
   System.Console.Write(message);
   return Convert.ToInt32(Console.ReadLine());
 }
 
-int row = ReadInt("Введите количество строк: ");
-int col = ReadInt("Введите количество столбцов: ");
+int row = InputInt("Введите количество строк: ");
+int col = InputInt("Введите количество столбцов: ");
 System.Console.WriteLine();
 double[,] numbers = new double[row, col];
 FillArray2D(numbers);
