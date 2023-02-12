@@ -1,6 +1,12 @@
 ﻿// Задача 1: Задайте двумерный массив. Напишите программу, которая упорядочивает по убыванию элементы 
 // каждой строки двумерного массива.
 
+Console.Write("введите количество строк > ");
+int rows = Convert.ToInt32(Console.ReadLine());
+Console.Write("введите количество столбцов > ");
+int columns = Convert.ToInt32(Console.ReadLine());
+int[,] numbers = new int[rows, columns];
+
 void FillArray(int[,] array)
 {
   for (int i = 0; i < array.GetLength(0); i++)
@@ -12,15 +18,6 @@ void FillArray(int[,] array)
   }
 }
 
-Console.Write("введите количество строк > ");
-int rows = Convert.ToInt32(Console.ReadLine());
-Console.Write("введите количество столбцов > ");
-int columns = Convert.ToInt32(Console.ReadLine());
-int[,] numbers = new int[rows, columns];
-FillArray(numbers);
-Console.WriteLine();
-Console.WriteLine("Массив до изменения:");
-PrintArray(numbers);
 
 for (int i = 0; i < numbers.GetLength(0); i++)
 {
@@ -54,3 +51,8 @@ void PrintArray(int[,] array)
     Console.WriteLine();
   }
 }
+
+FillArray(numbers);
+Console.WriteLine();
+Console.WriteLine("Массив до изменения:");
+PrintArray(numbers);
