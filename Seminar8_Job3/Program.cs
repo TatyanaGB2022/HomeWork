@@ -6,21 +6,21 @@ int p = InputNumbers("Введите число столбцов 2-й матри
 int range = InputNumbers("Введите диапазон случайных чисел от 1 до > ");
 System.Console.WriteLine();
 
-int[,] firstMartrix = new int[m, n];
-CreateArray(firstMartrix);
+int[,] firstMatrix = new int[m, n];
+CreateArray(firstMatrix);
 System.Console.WriteLine($"Первая матрица:");
-WriteArray(firstMartrix);
+WriteArray(firstMatrix);
 System.Console.WriteLine();
 
-int[,] secondMartrix = new int[n, p];
-CreateArray(secondMartrix);
+int[,] secondMatrix = new int[n, p];
+CreateArray(secondMatrix);
 System.Console.WriteLine($"Вторая матрица:");
-WriteArray(secondMartrix);
+WriteArray(secondMatrix);
 System.Console.WriteLine();
 
 int[,] resultMatrix = new int[m, p];
 
-MultiplyMatrix(firstMartrix, secondMartrix, resultMatrix);
+MultiplyMatrix(firstMatrix, secondMatrix, resultMatrix);
 System.Console.WriteLine($"Произведение первой и второй матриц:");
 WriteArray(resultMatrix);
 
