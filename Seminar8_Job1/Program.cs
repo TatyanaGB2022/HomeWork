@@ -1,9 +1,9 @@
 ﻿// Задача 1: Задайте двумерный массив. Напишите программу, которая упорядочивает по убыванию элементы 
 // каждой строки двумерного массива.
 
-System.Console.Write("введите количество строк > ");
+System.Console.Write("Введите количество строк > ");
 int rows = Convert.ToInt32(Console.ReadLine());
-System.Console.Write("введите количество столбцов > ");
+System.Console.Write("Введите количество столбцов > ");
 int columns = Convert.ToInt32(Console.ReadLine());
 int[,] numbers = new int[rows, columns];
 
