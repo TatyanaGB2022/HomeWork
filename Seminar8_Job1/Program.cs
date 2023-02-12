@@ -24,7 +24,7 @@ for (int i = 0; i < numbers.GetLength(0); i++)
   {
     for (int z = 0; z < numbers.GetLength(1) - 1; z++)
     {
-      if (numbers[i, z] < numbers[i, z + 1]) 
+      if (numbers[i, z] < numbers[i, z + 1])
       {
         int temp = 0;
         temp = numbers[i, z];
